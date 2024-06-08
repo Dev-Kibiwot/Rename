@@ -3,7 +3,7 @@ from tkinter import Tk, filedialog, messagebox
 import re
 
 def sanitize_filename(filename):
-    # Remove any invalid characters from the filename
+    # Removing any invalid characters from the filename
     return re.sub(r'[<>:"/\\|?*]', '', filename)
 
 def rename_al_files_in_folder(folder_path):
